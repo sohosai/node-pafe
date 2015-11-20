@@ -43,7 +43,7 @@ public:
       Nan::Null(),
       Nan::New(idm).ToLocalChecked()
     };
-    
+
     callback->Call(2, argv);
   }
 private:
@@ -57,7 +57,7 @@ NAN_METHOD(readIDm) {
 }
 
 NAN_MODULE_INIT(Init) {
-  NAN_EXPORT(target, readIDm);        
+  NAN_EXPORT(target, readIDm);
 }
 
 NODE_MODULE(pafe, Init)
